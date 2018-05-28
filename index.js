@@ -159,10 +159,10 @@ function toString(str) {
 exports.toString = toString;
 function request(method, url, body, headers) {
     return Promise.resolve(popsicle.get({
-        url: url,
-        body: body,
-        method: method,
-        headers: headers
+        url,
+        body,
+        method,
+        headers
     }));
 }
 exports.request = request;

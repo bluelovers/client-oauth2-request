@@ -286,10 +286,10 @@ export function toString(str: string)
 export function request(method: string, url: string, body, headers)
 {
 	return Promise.resolve(popsicle.get({
-		url: url,
-		body: body,
-		method: method,
-		headers: headers
+		url,
+		body,
+		method,
+		headers
 	}));
 }
 
