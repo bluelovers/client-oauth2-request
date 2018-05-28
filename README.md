@@ -39,7 +39,7 @@ import ClientRequest from 'client-oauth2-request';
 
 	let rp = rq.sign('/v5/repos/oschina/git-osc/pulls');
 
-	let r = await rq.get(rp.url)
+	let r = await rq.get(rp.url, rp)
 		.catch(function (err)
 		{
 			console.error(err);
